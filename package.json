@@ -1,0 +1,23 @@
+{
+  "name": "oncedark.nvim",
+  "version": "0.1.0",
+  "description": "Atom One Dark inspired color theme for NVim",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brennanfee/oncedark.nvim.git"
+  },
+  "author": "Brennan Fee <brennan.git@mailbots.org> (https://github.com/brennanfee)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brennanfee/oncedark.nvim/issues"
+  },
+  "homepage": "https://github.com/brennanfee/oncedark.nvim#readme",
+  "devDependencies": {
+    "husky": "^9.1.5"
+  }
+}
