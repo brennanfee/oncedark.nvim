@@ -9,9 +9,9 @@ function M.groups(theme)
   return {
     TelescopeSelection = {
       bg = config.options.cursorline and theme.generated.cursorline or theme.palette.bg,
-      fg = theme.palette.purple,
+      fg = theme.palette.magenta,
     },
-    TelescopeSelectionCaret = { fg = theme.palette.purple },
+    TelescopeSelectionCaret = { fg = theme.palette.magenta },
     TelescopeMultiSelection = {
       bg = config.options.cursorline and theme.generated.cursorline or theme.palette.bg,
       fg = theme.palette.gray,
@@ -27,8 +27,8 @@ function M.groups(theme)
     TelescopePromptNormal = { link = "TelescopeNormal" },
     TelescopePromptBorder = { link = "TelescopeBorder" },
     TelescopePreviewBorder = { link = "TelescopeBorder" },
-    TelescopePromptPrefix = { fg = theme.palette.purple },
-    TelescopeMatching = { fg = theme.palette.green },
+    TelescopePromptPrefix = { fg = theme.palette.magenta },
+    TelescopeMatching = { fg = theme.palette.bright_green },
   }
 end
 

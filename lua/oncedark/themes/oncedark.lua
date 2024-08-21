@@ -5,19 +5,33 @@ local meta = {
 
 local default_colors = {
   bg = "#282c34",
-  fg = "#abb2bf",
-  red = "#e06c75",
-  orange = "#d19a66",
-  yellow = "#e5c07b",
-  green = "#98c379",
-  cyan = "#56b6c2",
-  blue = "#61afef",
-  purple = "#c678dd",
-  white = "#abb2bf",
-  black = "#282c34",
-  gray = "#5c6370",
-  highlight = "#e2be7d",
-  comment = "#7f848e",
+  fg = "#d3d3d3",
+
+  red = "#800000",
+  bright_red = "#cd5c5c",
+  yellow = "#f0e68c",
+  bright_yellow = "#f4a460",
+  green = "#556b2f",
+  bright_green = "#8fbc8b",
+  cyan = "#20b2aa",
+  bright_cyan = "#afeeee",
+  blue = "#4682b4",
+  bright_blue = "#87ceeb",
+  magenta = "#da70d6",
+  bright_magenta = "#800080",
+  white = "#d3d3d3",
+  bright_white = "#f5f5f5",
+  black = "#333333",
+  bright_black = "#696969",
+
+  mid_gray = "#a9a9a9",
+
+  orange = "#f4a460", -- Alias for bright_yellow
+  purple = "#800080", -- Alias for bright_magenta
+  gray = "#696969", -- Alias for bright_black
+
+  highlight = "#696969",
+  comment = "#a9a9a9",
   none = "NONE",
 }
 
@@ -28,30 +42,30 @@ local function generate(colors)
   local color = require("oncedark.helpers")
 
   return {
-    cursorline = colors.cursorline or "#2d313b",
-    color_column = colors.color_column or "#2d313b",
-    fold = colors.fold or "#30333d",
-    line_number = colors.line_number or "#495162",
-    indentline = colors.indentline or "#3b4048",
-    selection = colors.selection or "#414858",
+    cursorline = colors.cursorline or color.brighten(colors.bg, 4),
+    color_column = colors.color_column or color.brighten(colors.bg, 4),
+    fold = colors.fold or color.brighten(colors.bg, 4),
+    line_number = colors.line_number or colors.gray,
+    indentline = colors.indentline or colors.gray,
+    selection = colors.selection or colors.highlight,
     float_bg = colors.float_bg or color.darken(colors.bg, 3),
     inlay_hint = colors.inlay_hint or color.darken(colors.gray, 7),
 
     -- Git colors
-    git_add = colors.git_add or "#109868",
-    git_change = colors.git_change or "#948B60",
-    git_delete = colors.git_delete or "#9a353d",
+    git_add = colors.git_add or colors.bright_green,
+    git_change = colors.git_change or colors.yellow,
+    git_delete = colors.git_delete or colors.bright_red,
 
-    git_hunk_add = colors.git_hunk_add or "#43554d",
-    git_hunk_delete = colors.git_hunk_delete or "#502d30",
-    git_hunk_add_inline = colors.git_hunk_add_inline or "#3f534f",
-    git_hunk_change_inline = colors.git_hunk_change_inline or "#41483d",
-    git_hunk_delete_inline = colors.git_hunk_delete_inline or "#6f2e2d",
+    git_hunk_add = colors.git_hunk_add or colors.green,
+    git_hunk_delete = colors.git_hunk_delete or colors.red,
+    git_hunk_add_inline = colors.git_hunk_add_inline or colors.bright_green,
+    git_hunk_change_inline = colors.git_hunk_change_inline or colors.green,
+    git_hunk_delete_inline = colors.git_hunk_delete_inline or colors.bright_red,
 
     -- Git diff
-    diff_add = colors.diff_add or "#003e4a",
-    diff_delete = colors.diff_delete or "#501b20",
-    diff_text = colors.diff_text or "#005869",
+    diff_add = colors.diff_add or colors.bright_green,
+    diff_delete = colors.diff_delete or colors.red,
+    diff_text = colors.diff_text or colors.blue,
 
     -- Lualine colors
     bg_statusline = colors.bg_statusline or color.darken(colors.bg, 2.5),

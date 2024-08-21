@@ -10,26 +10,26 @@ function M.groups(theme)
   return {
     ColorColumn = { bg = theme.generated.color_column }, -- used for the columns set with 'colorcolumn'
     Conceal = { fg = theme.palette.fg }, -- placeholder characters substituted for concealed text (see 'conceallevel')
-    Cursor = { bg = theme.palette.purple, fg = theme.palette.bg }, -- character under the cursor
+    Cursor = { bg = theme.palette.magenta, fg = theme.palette.bg }, -- character under the cursor
     -- lCursor      = {}, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
-    -- CursorIM     = {bg = theme.palette.red}, -- like Cursor, but used when in IME mode |CursorIM|
-    CursorColumn = { bg = theme.palette.gray }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
+    -- CursorIM     = {bg = theme.palette.bright_red}, -- like Cursor, but used when in IME mode |CursorIM|
+    CursorColumn = { bg = theme.generated.color_column }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine = {
       bg = config.options.cursorline and theme.generated.cursorline or theme.palette.bg,
     }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     CursorLineNr = {
       bg = config.options.cursorline and theme.generated.cursorline or theme.palette.bg,
-      fg = theme.palette.purple,
+      fg = theme.palette.magenta,
     }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     CursorLineNrNC = { bg = theme.generated.color_column, fg = theme.palette.gray }, -- CursorLineNr for inactive windows
-    CursorLineNrNCQuickFix = { bg = theme.palette.bg, fg = theme.palette.purple }, -- CursorLineNr for inactive quickfix windows
+    CursorLineNrNCQuickFix = { bg = theme.palette.bg, fg = theme.palette.magenta }, -- CursorLineNr for inactive quickfix windows
     Directory = { fg = theme.palette.blue }, -- directory names (and other special names in listings)
     DiffAdd = { bg = theme.generated.diff_add }, -- diff mode: Added line |diff.txt|
     DiffChange = { bg = "NONE" }, -- diff mode: Changed line |diff.txt|
     DiffDelete = { bg = theme.generated.diff_delete },
     DiffText = { bg = theme.generated.diff_text }, -- diff mode: Changed text within a changed line |diff.txt|
     EndOfBuffer = { fg = theme.palette.bg }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
-    ErrorMsg = { fg = theme.palette.red }, -- error messages on the command line
+    ErrorMsg = { fg = theme.palette.bright_red }, -- error messages on the command line
     VertSplit = {
       bg = config.options.transparency and "NONE" or theme.palette.bg,
       fg = theme.palette.gray,
@@ -64,7 +64,7 @@ function M.groups(theme)
     ModeMsg = { link = "Normal" }, -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea = { link = "ModeMsg" }, -- Area for messages and cmdline
     MsgSeparator = { link = "ModeMsg" }, -- Separator for scrolled messages, `msgsep` flag of 'display'
-    MoreMsg = { fg = theme.palette.green }, -- |more-prompt|
+    MoreMsg = { fg = theme.palette.bright_green }, -- |more-prompt|
     NonText = {
       bg = config.options.transparency and "NONE" or theme.palette.bg,
       fg = theme.palette.gray,
@@ -131,10 +131,10 @@ function M.groups(theme)
       bg = config.options.transparency and "NONE" or theme.palette.bg,
       fg = theme.palette.fg,
     }, -- tab pages line, where there are no labels
-    TabLineSel = { bg = theme.palette.purple, fg = theme.palette.bg }, -- tab pages line, active tab page label
-    TermCursor = { bg = theme.palette.purple }, -- cursor in a focused terminal
+    TabLineSel = { bg = theme.palette.magenta, fg = theme.palette.bg }, -- tab pages line, active tab page label
+    TermCursor = { bg = theme.palette.magenta }, -- cursor in a focused terminal
     TermCursorNC = { bg = theme.palette.gray }, -- cursor in an unfocused terminal
-    Title = { fg = theme.palette.green }, -- titles for output from ":set all", ":autocmd"
+    Title = { fg = theme.palette.bright_green }, -- titles for output from ":set all", ":autocmd"
     Visual = { bg = theme.generated.selection }, -- Visual mode selection
     VisualNOS = { link = "Visual" }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg = { fg = theme.palette.yellow }, -- warning messages
@@ -163,10 +163,10 @@ function M.groups(theme)
     diffLine = { fg = theme.palette.blue },
 
     -- Spelling
-    SpellBad = { fg = theme.palette.red, sp = theme.palette.red, undercurl = true },
-    SpellCap = { fg = theme.palette.red, sp = theme.palette.red, undercurl = true },
-    SpellLocal = { fg = theme.palette.red, sp = theme.palette.red, undercurl = true },
-    SpellRare = { fg = theme.palette.red, sp = theme.palette.red, undercurl = true },
+    SpellBad = { fg = theme.palette.bright_red, sp = theme.palette.bright_red, undercurl = true },
+    SpellCap = { fg = theme.palette.bright_red, sp = theme.palette.bright_red, undercurl = true },
+    SpellLocal = { fg = theme.palette.bright_red, sp = theme.palette.bright_red, undercurl = true },
+    SpellRare = { fg = theme.palette.bright_red, sp = theme.palette.bright_red, undercurl = true },
   }
 end
 

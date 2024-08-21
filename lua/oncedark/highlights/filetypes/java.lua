@@ -7,8 +7,8 @@ function M.groups(theme)
   local config = require("oncedark.config").config
 
   return {
-    ["@type.qualifier.java"] = { fg = theme.palette.purple },
-    ["@type.builtin.java"] = { fg = theme.palette.purple },
+    ["@type.qualifier.java"] = { fg = theme.palette.magenta },
+    ["@type.builtin.java"] = { fg = theme.palette.magenta },
   }
 end
 

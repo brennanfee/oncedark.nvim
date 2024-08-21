@@ -8,11 +8,11 @@ function M.groups(theme)
 
   return {
     BufferCurrent = {
-      fg = theme.palette.purple,
+      fg = theme.palette.magenta,
       bg = config.options.transparency and "NONE" or theme.palette.bg,
     },
     BufferCurrentIndex = { link = "BufferCurrent" },
-    BufferCurrentMod = { fg = theme.palette.purple },
+    BufferCurrentMod = { fg = theme.palette.magenta },
     BufferCurrentSign = { link = "BufferCurrentMod" },
     BufferCurrentIcon = { link = "BufferCurrentMod" },
     BufferCurrentTarget = {
@@ -30,7 +30,7 @@ function M.groups(theme)
     BufferInactiveMod = { link = "BufferInactive" },
     BufferInactiveSign = { fg = theme.palette.bg }, -- The inactive sign of a buffer
     BufferInactiveTarget = { link = "BufferCurrentTarget" },
-    BufferTabpages = { fg = theme.palette.purple }, -- The tab page indicator on the right
+    BufferTabpages = { fg = theme.palette.magenta }, -- The tab page indicator on the right
     BufferTabpageFill = { fg = theme.palette.bg }, -- The sign which marks the end of the bufferline
   }
 end

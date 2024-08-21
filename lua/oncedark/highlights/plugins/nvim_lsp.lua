@@ -8,18 +8,18 @@ function M.groups(theme)
 
   return {
     -- Neovim 0.6+
-    DiagnosticError = { fg = theme.palette.red },
+    DiagnosticError = { fg = theme.palette.bright_red },
     DiagnosticWarn = { fg = theme.palette.yellow },
     DiagnosticInfo = { fg = theme.palette.blue },
     DiagnosticHint = { fg = theme.palette.cyan },
-    DiagnosticOk = { fg = theme.palette.green },
+    DiagnosticOk = { fg = theme.palette.bright_green },
 
-    DiagnosticSignError = { fg = theme.palette.red },
+    DiagnosticSignError = { fg = theme.palette.bright_red },
     DiagnosticSignWarn = { fg = theme.palette.yellow },
     DiagnosticSignInfo = { fg = theme.palette.blue },
     DiagnosticSignHint = { fg = theme.palette.cyan },
 
-    DiagnosticUnderlineError = { fg = theme.palette.red, undercurl = true },
+    DiagnosticUnderlineError = { fg = theme.palette.bright_red, undercurl = true },
     DiagnosticUnderlineWarn = { fg = theme.palette.yellow, undercurl = true },
     DiagnosticUnderlineInfo = { fg = theme.palette.blue, undercurl = true },
     DiagnosticUnderlineHint = { fg = theme.palette.cyan, undercurl = true },

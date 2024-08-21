@@ -6,7 +6,7 @@ local M = {}
 function M.groups(theme)
   return {
     LspSagaDiagnosticBorder = { link = "NormalNC" },
-    LspSagaDiagnosticHeader = { fg = theme.palette.purple },
+    LspSagaDiagnosticHeader = { fg = theme.palette.magenta },
     LspSagaDiagnosticTruncateLine = { link = "NormalNC" },
     LspFloatWinBorder = { link = "NormalNC" },
     LspSagaBorderTitle = { link = "Title" },
@@ -27,7 +27,7 @@ function M.groups(theme)
     LspSagaCodeActionTitle = { link = "Title" },
     LspSagaCodeActionTruncateLine = { link = "NormalNC" },
     LspSagaCodeActionContent = { link = "Normal" },
-    LspSagaRenamePromptPrefix = { fg = theme.palette.purple },
+    LspSagaRenamePromptPrefix = { fg = theme.palette.magenta },
     -- LspSagaRenameBorder = {},
     -- LspSagaHoverBorder = {},
     -- LspSagaSignatureHelpBorder = {},

@@ -6,15 +6,15 @@ local M = {}
 function M.groups(theme)
   return {
     StartifyBracket = { fg = theme.palette.fg },
-    StartifyFile = { fg = theme.palette.purple },
+    StartifyFile = { fg = theme.palette.magenta },
     StartifyFooter = { fg = theme.palette.fg },
-    StartifyHeader = { fg = theme.palette.green },
+    StartifyHeader = { fg = theme.palette.bright_green },
     StartifyNumber = { fg = theme.palette.yellow },
     StartifyPath = { fg = theme.palette.gray },
     StartifySection = { fg = theme.palette.blue },
     StartifySelect = { fg = theme.palette.cyan },
     StartifySlash = { fg = theme.palette.gray },
-    StartifySpecial = { fg = theme.palette.red },
+    StartifySpecial = { fg = theme.palette.bright_red },
   }
 end
 

@@ -7,7 +7,7 @@ function M.groups(theme)
   return {
     TroubleNormal = { bg = "NONE" },
 
-    TroubleCount = { fg = theme.palette.purple },
+    TroubleCount = { fg = theme.palette.magenta },
     TroubleFile = { fg = theme.palette.cyan },
     TroubleFoldIcon = { fg = theme.palette.fg },
     TroubleLocation = { fg = theme.palette.cyan },

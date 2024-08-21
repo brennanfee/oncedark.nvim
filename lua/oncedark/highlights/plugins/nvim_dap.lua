@@ -5,10 +5,10 @@ local M = {}
 ---@return table
 function M.groups(theme)
   return {
-    DebugBreakpoint = { fg = theme.palette.red },
-    DebugBreakpointLine = { fg = theme.palette.red },
+    DebugBreakpoint = { fg = theme.palette.bright_red },
+    DebugBreakpointLine = { fg = theme.palette.bright_red },
     DebugHighlight = { fg = theme.palette.blue },
-    DebugHighlightLine = { fg = theme.palette.purple },
+    DebugHighlightLine = { fg = theme.palette.magenta },
     NvimDapVirtualText = { fg = theme.palette.cyan },
   }
 end

@@ -8,22 +8,22 @@ function M.groups(theme)
 
   return {
     ["@constructor.javascript"] = { fg = theme.palette.yellow },
-    ["@keyword.javascript"] = { fg = theme.palette.purple, style = config.styles.keywords },
-    ["@keyword.return.javascript"] = { fg = theme.palette.purple, style = config.styles.keywords },
+    ["@keyword.javascript"] = { fg = theme.palette.magenta, style = config.styles.keywords },
+    ["@keyword.return.javascript"] = { fg = theme.palette.magenta, style = config.styles.keywords },
     ["@method.javascript"] = { fg = theme.palette.blue, style = config.styles.methods },
     ["@method.call.javascript"] = { link = "@method.javascript" },
-    ["@variable.javascript"] = { fg = theme.palette.red, style = config.styles.variables },
+    ["@variable.javascript"] = { fg = theme.palette.bright_red, style = config.styles.variables },
     ["@variable.builtin.javascript"] = {
       fg = theme.palette.yellow,
       style = config.styles.variables,
     },
 
-    ["@odp.operator.fat_arrow.javascript"] = { fg = theme.palette.purple },
+    ["@odp.operator.fat_arrow.javascript"] = { fg = theme.palette.magenta },
     ["@odp.jsxtag.javascript"] = { fg = theme.palette.orange, style = config.styles.keywords },
     ["@odp.expression.punctuation.bracket.javascript"] = { fg = theme.palette.cyan },
     ["@odp.function.punctuation.bracket.javascript"] = { fg = theme.palette.blue },
     ["@odp.punctuation.bracket.javascript"] = { fg = theme.palette.orange },
-    ["@odp.statement.punctuation.bracket.javascript"] = { fg = theme.palette.purple },
+    ["@odp.statement.punctuation.bracket.javascript"] = { fg = theme.palette.magenta },
 
     -- LSP Semantic Tokens
     ["@lsp.type.class.javascript"] = { fg = theme.palette.yellow },

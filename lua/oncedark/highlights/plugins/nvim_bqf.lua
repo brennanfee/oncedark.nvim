@@ -8,8 +8,8 @@ function M.groups(theme)
 
   return {
     BqfPreviewBorder = { fg = theme.palette.gray },
-    BqfPreviewRange = { fg = theme.palette.green },
-    BqfSign = { fg = theme.palette.purple, bold = true },
+    BqfPreviewRange = { fg = theme.palette.bright_green },
+    BqfSign = { fg = theme.palette.magenta, bold = true },
   }
 end
 

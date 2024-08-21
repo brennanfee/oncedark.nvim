@@ -7,10 +7,10 @@ function M.groups(theme)
   local config = require("oncedark.config").config
 
   return {
-    ["@conditional.python"] = { fg = theme.palette.purple, style = config.styles.conditionals },
+    ["@conditional.python"] = { fg = theme.palette.magenta, style = config.styles.conditionals },
     ["@constant.builtin.python"] = { fg = theme.palette.orange, style = config.styles.constants },
-    ["@keyword.function.python"] = { fg = theme.palette.purple, style = config.styles.keywords },
-    ["@include.python"] = { fg = theme.palette.purple, style = config.styles.keywords },
+    ["@keyword.function.python"] = { fg = theme.palette.magenta, style = config.styles.keywords },
+    ["@include.python"] = { fg = theme.palette.magenta, style = config.styles.keywords },
     ["@method.call.python"] = { fg = theme.palette.blue, style = config.styles.methods },
     ["@variable.builtin.python"] = { fg = theme.palette.yellow, style = config.styles.variables },
     ["@punctuation.bracket.python"] = { fg = theme.palette.orange },
@@ -20,14 +20,14 @@ function M.groups(theme)
     ["@odp.decorator.python"] = { link = "@function" },
     ["@odp.decorator.function.python"] = { link = "@function" },
     ["@odp.function.builtin.python"] = { link = "@function.builtin" },
-    ["@odp.import_from.python"] = { fg = theme.palette.purple, style = config.styles.keywords },
+    ["@odp.import_from.python"] = { fg = theme.palette.magenta, style = config.styles.keywords },
     ["@odp.import_module.python"] = { fg = theme.palette.fg },
-    ["@odp.interpolation.python"] = { fg = theme.palette.red, style = config.styles.parameters },
+    ["@odp.interpolation.python"] = { fg = theme.palette.bright_red, style = config.styles.parameters },
     ["@odp.keyword.python"] = { style = config.styles.keywords },
     ["@odp.keyword.class.python"] = { link = "@keyword.function.python" },
     ["@odp.operator.splat.python"] = { fg = theme.palette.fg },
     ["@odp.punctuation.bracket.python"] = { fg = theme.palette.orange },
-    ["@odp.punctuation.special.python"] = { fg = theme.palette.purple },
+    ["@odp.punctuation.special.python"] = { fg = theme.palette.magenta },
   }
 end
 

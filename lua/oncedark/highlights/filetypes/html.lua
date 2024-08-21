@@ -10,7 +10,7 @@ function M.groups(theme)
     ["@operator.html"] = { fg = theme.palette.fg },
     ["@tag.attribute.html"] = { fg = theme.palette.orange, style = config.styles.tags },
     ["@string.special.url.html"] = { fg = theme.palette.gree, underline = true },
-    ["@text.uri.html"] = { fg = theme.palette.green, underline = true },
+    ["@text.uri.html"] = { fg = theme.palette.bright_green, underline = true },
   }
 end
 

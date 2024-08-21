@@ -6,7 +6,7 @@ local M = {}
 function M.groups(theme)
   return {
     ["@operator.toml"] = { fg = theme.palette.fg },
-    ["@property.toml"] = { fg = theme.palette.purple },
+    ["@property.toml"] = { fg = theme.palette.magenta },
   }
 end
 

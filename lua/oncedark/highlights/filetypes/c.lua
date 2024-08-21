@@ -13,10 +13,10 @@ function M.groups(theme)
     ["@constant.c"] = { fg = theme.palette.yellow },
     ["@constant.builtin.c"] = { fg = theme.palette.yellow },
     ["@function.builtin.c"] = { fg = theme.palette.cyan },
-    ["@label.c"] = { fg = theme.palette.red },
-    ["@type.builtin.c"] = { fg = theme.palette.purple },
-    ["@type.qualifier.c"] = { fg = theme.palette.purple },
-    ["@variable.parameter.c"] = { fg = theme.palette.red, style = config.styles.parameters },
+    ["@label.c"] = { fg = theme.palette.bright_red },
+    ["@type.builtin.c"] = { fg = theme.palette.magenta },
+    ["@type.qualifier.c"] = { fg = theme.palette.magenta },
+    ["@variable.parameter.c"] = { fg = theme.palette.bright_red, style = config.styles.parameters },
 
     -- LSP Semantic Tokens
     ["@lsp.type.macro.c"] = { fg = theme.palette.orange, style = config.styles.constants },
