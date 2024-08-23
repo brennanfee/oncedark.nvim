@@ -7,7 +7,7 @@ function M.groups(theme)
   local config = require("oncedark.config").config
 
   return {
-    ["@label.json"] = { fg = theme.palette.bright_red },
+    ["@label.json"] = { fg = theme.palette.red },
 
     ["@odp.braces.json"] = { fg = theme.palette.cyan },
     ["@odp.brackets.json"] = { fg = theme.palette.orange },

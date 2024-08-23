@@ -24,9 +24,9 @@ function M.groups(theme)
     DapUIBreakpointsInfo = { fg = theme.palette.fg },
     DapUIBreakpointsCurrentLine = { fg = theme.palette.yellow },
     DapUIBreakpointsLine = { link = "DapUIBreakpointsCurrentLine" },
-    DapUIWatchesEmpty = { bg = theme.palette.bright_red, fg = theme.palette.bg },
-    DapUIWatchesValue = { fg = theme.palette.bright_red },
-    DapUIWatchesError = { fg = theme.palette.bright_red },
+    DapUIWatchesEmpty = { bg = theme.palette.red, fg = theme.palette.bg },
+    DapUIWatchesValue = { fg = theme.palette.red },
+    DapUIWatchesError = { fg = theme.palette.red },
   }
 end
 

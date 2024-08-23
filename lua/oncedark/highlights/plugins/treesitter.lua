@@ -10,10 +10,10 @@ function M.groups(theme)
   -- https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
   return {
     -- Identifiers
-    ["@variable"] = { fg = theme.palette.bright_red, style = config.styles.variables }, -- various variable names
+    ["@variable"] = { fg = theme.palette.red, style = config.styles.variables }, -- various variable names
     ["@variable.builtin"] = { fg = theme.palette.yellow }, -- built-in variable names (e.g. `this`)
-    ["@variable.parameter"] = { fg = theme.palette.bright_red, style = config.styles.parameters }, -- parameters of a function
-    ["@variable.member"] = { fg = theme.palette.bright_red }, -- object and struct fields
+    ["@variable.parameter"] = { fg = theme.palette.red, style = config.styles.parameters }, -- parameters of a function
+    ["@variable.member"] = { fg = theme.palette.red }, -- object and struct fields
 
     ["@constant"] = { fg = theme.palette.orange, style = config.styles.constants }, -- constant identifiers
     ["@constant.builtin"] = { fg = theme.palette.magenta, style = config.styles.constants }, -- built-in constant values
@@ -23,11 +23,11 @@ function M.groups(theme)
     ["@label"] = { link = "Label" }, -- GOTO and other labels (e.g. `label:` in C)
 
     -- Literals
-    ["@string"] = { fg = theme.palette.bright_green, style = config.styles.strings }, -- string literals
-    ["@string.regex"] = { fg = theme.palette.bright_green, style = config.styles.strings }, -- regular expressions
+    ["@string"] = { fg = theme.palette.green, style = config.styles.strings }, -- string literals
+    ["@string.regex"] = { fg = theme.palette.green, style = config.styles.strings }, -- regular expressions
     ["@string.escape"] = { fg = theme.palette.cyan, style = config.styles.strings }, -- escape sequences
     ["@string.special"] = { link = "Special" }, -- other special strings (e.g. dates)
-    ["@string.special.symbol"] = { fg = theme.palette.bright_red }, -- symbols or atoms
+    ["@string.special.symbol"] = { fg = theme.palette.red }, -- symbols or atoms
     ["@string.special.url"] = { fg = theme.palette.blue, italic = true, underline = true }, -- URIs (e.g. hyperlinks)
 
     ["@character"] = { link = "Character" }, -- character literals
@@ -44,7 +44,7 @@ function M.groups(theme)
     ["@type.qualifier"] = { link = "@type" }, -- type qualifiers (e.g. `const`)
 
     ["@attribute"] = { fg = theme.palette.magenta }, --attribute annotations (e.g. Python decorators)
-    ["@property"] = { fg = theme.palette.bright_red }, -- similar to `@field`
+    ["@property"] = { fg = theme.palette.red }, -- similar to `@field`
 
     -- Functions
     ["@function"] = { fg = theme.palette.blue, style = config.styles.functions }, -- function definitions
@@ -76,7 +76,7 @@ function M.groups(theme)
 
     -- Comments
     ["@comment"] = { link = "Comment" }, -- line and block comments
-    ["@comment.error"] = { bg = theme.palette.bright_red, fg = theme.palette.bg }, -- error-type comments (e.g. `ERROR`, `FIXME`, `DEPRECATED:`)
+    ["@comment.error"] = { bg = theme.palette.red, fg = theme.palette.bg }, -- error-type comments (e.g. `ERROR`, `FIXME`, `DEPRECATED:`)
     ["@comment.warning"] = { bg = theme.palette.yellow, fg = theme.palette.bg }, -- warning-type comments (e.g. `WARNING:`, `FIX:`, `HACK:`)
     ["@comment.todo"] = { bg = theme.palette.blue, fg = theme.palette.bg }, -- todo-type comments (e.g. `TODO:`, `WIP:`, `FIXME:`)
     ["@comment.note"] = { bg = theme.palette.cyan, fg = theme.palette.bg }, -- note-type comments (e.g. `NOTE:`, `INFO:`, `XXX`)
@@ -87,22 +87,22 @@ function M.groups(theme)
     ["@markup.strikethrough"] = { strikethrough = true }, -- struck-through text
     ["@markup.underline"] = { underline = true }, -- underlined text (only for literal underline markup!)
 
-    ["@markup.heading"] = { fg = theme.palette.bright_green, bold = true }, -- headings, titles (including markers)
+    ["@markup.heading"] = { fg = theme.palette.green, bold = true }, -- headings, titles (including markers)
 
     ["@markup.math"] = { link = "Special" }, -- math environments (e.g. `$ ... $` in LaTeX)
 
     ["@markup.link.label"] = { fg = theme.palette.blue }, -- link, reference descriptions
     ["@markup.link.url"] = { fg = theme.palette.magenta }, -- URL-style links
 
-    ["@markup.raw"] = { fg = theme.palette.bright_green }, -- literal or verbatim text (e.g. inline code)
+    ["@markup.raw"] = { fg = theme.palette.green }, -- literal or verbatim text (e.g. inline code)
     ["@markup.raw.delimiter"] = { fg = theme.palette.gray },
 
-    ["@markup.list"] = { fg = theme.palette.bright_red }, -- list markers
+    ["@markup.list"] = { fg = theme.palette.red }, -- list markers
     ["@markup.list.checked"] = { bg = theme.palette.magenta, fg = theme.palette.bg }, -- checked todo-style list markers
     ["@markup.list.unchecked"] = { fg = theme.palette.fg }, -- unchecked todo-style list markers
 
     -- Tags
-    ["@tag"] = { fg = theme.palette.bright_red }, -- XML tag names
+    ["@tag"] = { fg = theme.palette.red }, -- XML tag names
     ["@tag.attribute"] = { link = "@property" }, -- XML tag attributes
     ["@tag.delimiter"] = { link = "Delimiter" }, -- XML tag delimiters
   }

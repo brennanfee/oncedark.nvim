@@ -7,18 +7,18 @@ local default_colors = {
   bg = "#282c34",
   fg = "#d3d3d3",
 
-  red = "#800000",
-  bright_red = "#cd5c5c",
+  red = "#cd5c5c",
+  bright_red = "#a52a2a",
   yellow = "#f0e68c",
   bright_yellow = "#f4a460",
-  green = "#556b2f",
-  bright_green = "#8fbc8b",
-  cyan = "#20b2aa",
-  bright_cyan = "#afeeee",
+  green = "#719368",
+  bright_green = "#3cb371",
+  cyan = "#00ced1",
+  bright_cyan = "#ffe4e1",
   blue = "#4682b4",
-  bright_blue = "#87ceeb",
+  bright_blue = "#b0c4de",
   magenta = "#da70d6",
-  bright_magenta = "#800080",
+  bright_magenta = "#9932cc",
   white = "#d3d3d3",
   bright_white = "#f5f5f5",
   black = "#333333",
@@ -26,9 +26,13 @@ local default_colors = {
 
   mid_gray = "#a9a9a9",
 
+  brown = "#a52a2a", -- Alias for bright_red
   orange = "#f4a460", -- Alias for bright_yellow
+  lime = "#3cb371", -- Alias for bright_green
+  pink = "#ffe4e1", -- Alias for bright_cyan
   purple = "#800080", -- Alias for bright_magenta
   gray = "#696969", -- Alias for bright_black
+  grey = "#696969", -- Alias for bright_black
 
   highlight = "#696969",
   comment = "#a9a9a9",
@@ -52,18 +56,18 @@ local function generate(colors)
     inlay_hint = colors.inlay_hint or color.darken(colors.gray, 7),
 
     -- Git colors
-    git_add = colors.git_add or colors.bright_green,
+    git_add = colors.git_add or colors.green,
     git_change = colors.git_change or colors.yellow,
-    git_delete = colors.git_delete or colors.bright_red,
+    git_delete = colors.git_delete or colors.red,
 
     git_hunk_add = colors.git_hunk_add or colors.green,
     git_hunk_delete = colors.git_hunk_delete or colors.red,
-    git_hunk_add_inline = colors.git_hunk_add_inline or colors.bright_green,
-    git_hunk_change_inline = colors.git_hunk_change_inline or colors.green,
-    git_hunk_delete_inline = colors.git_hunk_delete_inline or colors.bright_red,
+    git_hunk_add_inline = colors.git_hunk_add_inline or colors.green,
+    git_hunk_change_inline = colors.git_hunk_change_inline or colors.yellow,
+    git_hunk_delete_inline = colors.git_hunk_delete_inline or colors.red,
 
     -- Git diff
-    diff_add = colors.diff_add or colors.bright_green,
+    diff_add = colors.diff_add or colors.green,
     diff_delete = colors.diff_delete or colors.red,
     diff_text = colors.diff_text or colors.blue,
 

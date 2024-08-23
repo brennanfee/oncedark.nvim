@@ -11,9 +11,9 @@ function M.groups(theme)
     ["@function.call.typescript"] = { fg = theme.palette.blue, style = config.styles.functions },
     ["@method.typescript"] = { fg = theme.palette.blue, style = config.styles.methods },
     ["@method.call.typescript"] = { fg = theme.palette.blue, style = config.styles.methods },
-    ["@parameter.typescript"] = { fg = theme.palette.bright_red, style = config.styles.parameters },
+    ["@parameter.typescript"] = { fg = theme.palette.red, style = config.styles.parameters },
     ["@punctuation.bracket.typescript"] = { fg = theme.palette.orange },
-    ["@variable.typescript"] = { fg = theme.palette.bright_red, style = config.styles.variables },
+    ["@variable.typescript"] = { fg = theme.palette.red, style = config.styles.variables },
     ["@variable.builtin.typescript"] = {
       fg = theme.palette.yellow,
       style = config.styles.variables,

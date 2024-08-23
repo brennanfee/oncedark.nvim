@@ -8,13 +8,13 @@ function M.groups(theme)
 
   return {
     ["@constant.builtin.rust"] = { fg = theme.palette.yellow },
-    ["@field.rust"] = { fg = theme.palette.bright_red },
+    ["@field.rust"] = { fg = theme.palette.red },
     ["@function.macro.rust"] = { link = "Function" },
     ["@operator.rust"] = { fg = theme.palette.fg },
     ["@storageclass.rust"] = { link = "@keyword" },
     ["@punctuation.bracket.rust"] = { fg = theme.palette.orange },
     ["@type.qualifier.rust"] = { fg = theme.palette.magenta },
-    ["@variable.rust"] = { fg = theme.palette.bright_red, style = config.styles.variables },
+    ["@variable.rust"] = { fg = theme.palette.red, style = config.styles.variables },
 
     ["@odp.punctuation_arguments_brackets.rust"] = { fg = theme.palette.magenta },
     ["@odp.punctuation_token_bracket.rust"] = { fg = theme.palette.cyan },
@@ -22,7 +22,7 @@ function M.groups(theme)
     -- LSP Semantic Tokens
     ["@lsp.type.builtinAttribute.rust"] = { link = "Function" },
     ["@lsp.type.attributeBracket.rust"] = { link = "@punctuation.bracket.rust" },
-    ["@lsp.type.generic.rust"] = { fg = theme.palette.bright_red, style = config.styles.variables },
+    ["@lsp.type.generic.rust"] = { fg = theme.palette.red, style = config.styles.variables },
   }
 end
 

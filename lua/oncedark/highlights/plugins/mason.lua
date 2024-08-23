@@ -7,7 +7,7 @@ function M.groups(theme)
   return {
     MasonHighlightBlockBold = { fg = theme.palette.bg, bg = theme.palette.magenta, bold = true },
     MasonMutedBlock = { fg = theme.palette.bg, bg = theme.palette.fg },
-    MasonHighlight = { fg = theme.palette.bright_green },
+    MasonHighlight = { fg = theme.palette.green },
     MasonMuted = { fg = theme.palette.fg },
     MasonWarning = { fg = theme.palette.yellow, italic = true },
   }

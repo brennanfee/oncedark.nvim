@@ -9,7 +9,7 @@ function M.groups(theme)
   return {
     ["xmlAttrib"] = { fg = theme.palette.orange },
     ["xmlTag"] = { fg = theme.palette.fg },
-    ["xmlTagName"] = { fg = theme.palette.bright_red },
+    ["xmlTagName"] = { fg = theme.palette.red },
   }
 end
 

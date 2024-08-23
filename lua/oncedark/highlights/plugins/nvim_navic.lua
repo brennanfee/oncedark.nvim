@@ -10,7 +10,7 @@ function M.groups(theme)
     NavicIconsVariable = { fg = theme.palette.orange },
     NavicIconsConstant = { fg = theme.palette.orange },
     NavicIconsBoolean = { fg = theme.palette.orange },
-    NavicIconsString = { fg = theme.palette.bright_green },
+    NavicIconsString = { fg = theme.palette.green },
     NavicIconsObject = { fg = theme.palette.magenta },
     NavicIconsProperty = { fg = theme.palette.fg },
     NavicText = { fg = theme.palette.gray },

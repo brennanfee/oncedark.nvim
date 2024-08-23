@@ -4,8 +4,8 @@ local config = require("oncedark.config").config
 local oncedark = {}
 
 oncedark.normal = {
-  a = { bg = colors.bright_green, fg = colors.bg },
-  b = { bg = colors.fg_gutter, fg = colors.bright_green },
+  a = { bg = colors.green, fg = colors.bg },
+  b = { bg = colors.fg_gutter, fg = colors.green },
   c = {
     bg = config.options.lualine_transparency and colors.none or colors.bg_statusline,
     fg = colors.fg,
@@ -28,8 +28,8 @@ oncedark.visual = {
 }
 
 oncedark.replace = {
-  a = { bg = colors.bright_red, fg = colors.bg },
-  b = { bg = colors.fg_gutter, fg = colors.bright_red },
+  a = { bg = colors.red, fg = colors.bg },
+  b = { bg = colors.fg_gutter, fg = colors.red },
 }
 
 local inactive_bg = config.options.highlight_inactive_windows and colors.color_column or colors.bg

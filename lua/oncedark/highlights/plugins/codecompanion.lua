@@ -9,7 +9,7 @@ function M.groups(theme)
   return {
     CodeCompanionChatHeader = { fg = theme.palette.magenta, bold = true },
     CodeCompanionChatSeparator = { fg = theme.palette.gray },
-    CodeCompanionChatTool = { fg = theme.palette.bg, bg = theme.palette.bright_green },
+    CodeCompanionChatTool = { fg = theme.palette.bg, bg = theme.palette.green },
     CodeCompanionChatVariable = { fg = theme.palette.bg, bg = theme.palette.blue },
   }
 end

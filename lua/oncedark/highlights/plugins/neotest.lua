@@ -11,14 +11,14 @@ function M.groups(theme)
     -- NeotestBorder not implemented yet
     NeotestDir = { fg = theme.palette.cyan },
     NeotestExpandMarker = { fg = theme.palette.gray },
-    NeotestFailed = { fg = theme.palette.bright_red },
+    NeotestFailed = { fg = theme.palette.red },
     NeotestFile = { fg = theme.palette.cyan },
     NeotestFocused = {
       bg = (config.options.cursorline and theme.generated.cursorline or "NONE"),
     },
     NeotestIndent = { fg = theme.palette.fg },
     NeotestNamespace = { fg = theme.palette.blue },
-    NeotestPassed = { fg = theme.palette.bright_green },
+    NeotestPassed = { fg = theme.palette.green },
     NeotestRunning = { fg = theme.palette.yellow },
     NeotestSkipped = { fg = theme.palette.cyan },
     -- NeotestTest links to Normal

@@ -7,9 +7,9 @@ function M.groups(theme)
   local config = require("oncedark.config").config
 
   return {
-    ["@markup.heading"] = { fg = theme.palette.bright_red },
+    ["@markup.heading"] = { fg = theme.palette.red },
     ["@markup.quote.markdown"] = { fg = theme.palette.comment },
-    ["@text.title.markdown"] = { fg = theme.palette.bright_red, bold = true },
+    ["@text.title.markdown"] = { fg = theme.palette.red, bold = true },
     ["@markup.list.markdown"] = { fg = theme.palette.yellow },
     ["@label.markdown"] = { fg = theme.palette.fg },
     ["@markup.raw.delimiter.markdown"] = { fg = theme.palette.fg },
@@ -20,7 +20,7 @@ function M.groups(theme)
     ["@markup.raw.delimiter.markdown_inline"] = { fg = theme.palette.yellow },
     ["@parameter.markdown_inline"] = { fg = theme.palette.fg },
     ["@punctuation.delimiter.markdown_inline"] = { fg = theme.palette.orange },
-    ["@text.literal.markdown_inline"] = { fg = theme.palette.bright_green },
+    ["@text.literal.markdown_inline"] = { fg = theme.palette.green },
     ["@text.reference.markdown_inline"] = { fg = theme.palette.blue },
     ["@text.strong.markdown_inline"] = { fg = theme.palette.orange, bold = true },
     ["@text.uri.markdown_inline"] = { fg = theme.palette.magenta },

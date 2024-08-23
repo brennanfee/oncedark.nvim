@@ -5,8 +5,8 @@ local M = {}
 ---@return table
 function M.groups(theme)
   return {
-    UltestPass = { fg = theme.palette.bright_green },
-    UltestFail = { fg = theme.palette.bright_red },
+    UltestPass = { fg = theme.palette.green },
+    UltestFail = { fg = theme.palette.red },
     UltestRunning = { fg = theme.palette.yellow },
     UltestBorder = { fg = theme.palette.gray },
     UltestInfo = { fg = theme.palette.magenta },

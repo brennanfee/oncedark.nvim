@@ -5,11 +5,11 @@ local M = {}
 ---@return table
 function M.groups(theme)
   return {
-    TSRainbowRed = { fg = theme.palette.bright_red },
+    TSRainbowRed = { fg = theme.palette.red },
     TSRainbowYellow = { fg = theme.palette.yellow },
     TSRainbowBlue = { fg = theme.palette.blue },
     TSRainbowOrange = { fg = theme.palette.orange },
-    TSRainbowGreen = { fg = theme.palette.bright_green },
+    TSRainbowGreen = { fg = theme.palette.green },
     TSRainbowViolet = { fg = theme.palette.magenta },
     TSRainbowCyan = { fg = theme.palette.cyan },
   }

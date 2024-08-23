@@ -9,7 +9,7 @@ function M.groups(theme)
   return {
     ["@function.tsx"] = { fg = theme.palette.blue, style = config.styles.functions },
     ["@function.call.tsx"] = { fg = theme.palette.blue, style = config.styles.functions },
-    ["@parameter.tsx"] = { fg = theme.palette.bright_red, style = config.styles.parameters },
+    ["@parameter.tsx"] = { fg = theme.palette.red, style = config.styles.parameters },
     ["@punctuation.bracket.tsx"] = { fg = theme.palette.orange },
     ["@tag.attribute.tsx"] = { fg = theme.palette.orange },
     ["@type.builtin.tsx"] = { fg = theme.palette.magenta },

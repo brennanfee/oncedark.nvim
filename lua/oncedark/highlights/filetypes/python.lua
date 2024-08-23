@@ -22,7 +22,7 @@ function M.groups(theme)
     ["@odp.function.builtin.python"] = { link = "@function.builtin" },
     ["@odp.import_from.python"] = { fg = theme.palette.magenta, style = config.styles.keywords },
     ["@odp.import_module.python"] = { fg = theme.palette.fg },
-    ["@odp.interpolation.python"] = { fg = theme.palette.bright_red, style = config.styles.parameters },
+    ["@odp.interpolation.python"] = { fg = theme.palette.red, style = config.styles.parameters },
     ["@odp.keyword.python"] = { style = config.styles.keywords },
     ["@odp.keyword.class.python"] = { link = "@keyword.function.python" },
     ["@odp.operator.splat.python"] = { fg = theme.palette.fg },

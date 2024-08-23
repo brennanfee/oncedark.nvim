@@ -5,9 +5,9 @@ local M = {}
 ---@return table
 function M.groups(theme)
   return {
-    NotifyERRORBorder = { fg = theme.palette.bright_red },
-    NotifyERRORIcon = { fg = theme.palette.bright_red },
-    NotifyERRORTitle = { fg = theme.palette.bright_red },
+    NotifyERRORBorder = { fg = theme.palette.red },
+    NotifyERRORIcon = { fg = theme.palette.red },
+    NotifyERRORTitle = { fg = theme.palette.red },
     NotifyWARNBorder = { fg = theme.palette.yellow },
     NotifyWARNIcon = { fg = theme.palette.yellow },
     NotifyWARNTitle = { fg = theme.palette.yellow },

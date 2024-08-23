@@ -28,7 +28,7 @@ function M.groups(theme)
     TelescopePromptBorder = { link = "TelescopeBorder" },
     TelescopePreviewBorder = { link = "TelescopeBorder" },
     TelescopePromptPrefix = { fg = theme.palette.magenta },
-    TelescopeMatching = { fg = theme.palette.bright_green },
+    TelescopeMatching = { fg = theme.palette.green },
   }
 end
 

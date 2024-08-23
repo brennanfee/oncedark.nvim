@@ -9,13 +9,13 @@ function M.groups(theme)
   return {
     Comment = { fg = theme.palette.comment, style = config.styles.comments }, -- Comments
     Constant = { fg = theme.palette.orange, style = config.styles.constants }, -- (preferred) any constant
-    String = { fg = theme.palette.bright_green, style = config.styles.strings }, --   a string constant: "this is a string"
-    Character = { fg = theme.palette.bright_green }, -- a character constant: 'c', '\n'
+    String = { fg = theme.palette.green, style = config.styles.strings }, --   a string constant: "this is a string"
+    Character = { fg = theme.palette.green }, -- a character constant: 'c', '\n'
     Number = { fg = theme.palette.orange, style = config.styles.numbers }, -- a number constant: 234, 0xff
     Float = { fg = theme.palette.orange }, -- a floating point constant: 2.3e10
     Boolean = { fg = theme.palette.orange }, -- a boolean constant: TRUE, false
 
-    Identifier = { fg = theme.palette.bright_red, style = config.styles.variables }, -- (preferred) any variable name
+    Identifier = { fg = theme.palette.red, style = config.styles.variables }, -- (preferred) any variable name
     Function = { fg = theme.palette.blue, style = config.styles.functions }, -- function name (also: methods for classes)
 
     Statement = { fg = theme.palette.magenta }, -- (preferred) any statement
@@ -50,7 +50,7 @@ function M.groups(theme)
     -- Ignore = { }, -- (preferred) left blank, hidden  |hl-Ignore|
     Italic = { italic = true },
 
-    Error = { fg = theme.palette.bright_red }, -- (preferred) any erroneous construct
+    Error = { fg = theme.palette.red }, -- (preferred) any erroneous construct
     Todo = { fg = theme.palette.magenta }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
     qfLineNr = { link = "LineNr" },

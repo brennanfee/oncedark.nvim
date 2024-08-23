@@ -24,13 +24,13 @@ function M.groups(theme)
     NeoTreeIndentMarker = { fg = theme.palette.gray },
     NeoTreeTitleBar = { fg = theme.palette.bg, bg = theme.palette.magenta },
     NeoTreeFloatTitle = { fg = theme.palette.bg, bg = theme.palette.magenta },
-    NeoTreeGitAdded = { fg = theme.palette.bright_green },
+    NeoTreeGitAdded = { fg = theme.palette.green },
     NeoTreeGitConflict = { fg = theme.palette.blue },
-    NeoTreeGitDeleted = { fg = theme.palette.bright_red },
+    NeoTreeGitDeleted = { fg = theme.palette.red },
     NeoTreeGitModified = { fg = theme.palette.yellow },
     NeoTreeGitIgnored = { fg = theme.palette.gray },
     NeoTreeGitUntracked = { fg = theme.palette.gray },
-    NeoTreeModified = { fg = theme.palette.bright_red },
+    NeoTreeModified = { fg = theme.palette.red },
   }
 end
 

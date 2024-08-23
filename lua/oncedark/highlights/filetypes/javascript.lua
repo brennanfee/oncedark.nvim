@@ -12,7 +12,7 @@ function M.groups(theme)
     ["@keyword.return.javascript"] = { fg = theme.palette.magenta, style = config.styles.keywords },
     ["@method.javascript"] = { fg = theme.palette.blue, style = config.styles.methods },
     ["@method.call.javascript"] = { link = "@method.javascript" },
-    ["@variable.javascript"] = { fg = theme.palette.bright_red, style = config.styles.variables },
+    ["@variable.javascript"] = { fg = theme.palette.red, style = config.styles.variables },
     ["@variable.builtin.javascript"] = {
       fg = theme.palette.yellow,
       style = config.styles.variables,
